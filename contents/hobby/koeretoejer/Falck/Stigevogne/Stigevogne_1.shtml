@@ -1,0 +1,29 @@
+<html> <head> <title>Gallery item</title> <style type="text/css"> td.thickBorder{ border: solid #00ff00 3px;} </style> </head> <body> <table border=0> <tr> <td width="20%">
+<p><b><a href="index.shtml"><img src="arrow-up.png"></a></b><p>
+<h1>Stigevogne</h1>
+Diverse Falck stigevogne
+</td> <td> <table border=0 align=center cellpadding=0> <tr>
+<td colspan=7><a target=_blank href="IMG_0846.jpg"><img src="1_640pix.jpg"></a></td></tr><tr>
+<td colspan=7>
+<h2>Mercedes 1113 stige</h2>
+<ul>
+<li>Grundmodel: Mercedes 1113 stige fra Wiking
+<li>Forbedringer: Decals fra Stoppel Hobby. Overvejer ommaling.
+<li>Forbillede: Falck Nyk&oslash;bing Mors
+</ul>
+</td></tr><tr><td>
+<img src="arrow-left.png">
+</td><td align=center>
+</td><td align=center>
+</td><td align=center class="thickBorder">
+<img src="1_thumb.jpg">
+</td><td align=center>
+<a href="Stigevogne_2.shtml"><img src="2_thumb.jpg"></a>
+</td><td align=center>
+</td><td align=right>
+<a href="Stigevogne_2.shtml">
+<img src="arrow-right.png">
+</a>
+</td></tr><td>
+</td></tr> </table> </td> </tr> </table>
+</body></html>

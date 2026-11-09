@@ -1,0 +1,6 @@
+<h2>Ford Transit dyreambulance</h2>
+<ul>
+<li>Grundmodel: Ford Transit dyreambulance, Rietze modelle
+<li>Forbedringer: Stige og blink monteret
+<li>Forbillede: Har intet link, men typen har helt sikkert fandtes.
+</ul>

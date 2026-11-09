@@ -1,0 +1,99 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.5 [en] (X11; I; HP-UX B.10.20 9000/782) [Netscape]">
+   <title>nru_view Users' Manual</title>
+</head>
+<body>
+
+<blockquote>
+<center>
+<h1>
+d3template info page
+</h1></center>
+</blockquote>
+
+<h2>
+Introduction</h2>
+
+<tt>d3template</tt> is a <tt>matlab</tt> program, used for creation of MR templates 
+for use in <A HREF="d3view_manual.html"><tt>d3view</tt></A>. An MR template is 
+created from a standard SPM Analyze dataset containing anatomical data, eg. an 
+MR dataset or perhaps a CT dataset. <tt>d3template</tt> creates a set of surface 
+models of the brain (or skin) surface from the dataset. The surface models are 
+created using a so called isosurface algorithm, which creates a set of triangles 
+in volume space, situated at voxels with a unique threshold value. This implies 
+that the main problem in using <tt>d3template</tt> is selection of that threshold. 
+<h2>
+Starting <tt>d3template</tt></h2>
+
+<tt>d3template</tt> is started from inside <A HREF="d3view_manual.html"><tt>d3view</tt></A>, 
+or from the <tt>matlab</tt> prompt. A graphical user interface appars:<BR>
+<BR>
+<IMG SRC="pics/d3template.jpg" ALT="d3template main panel" WIDTH="908" HEIGHT="442"><BR>
+<BR>
+<h2>
+Loading data</h2>
+Pressing the "load" button will present a standard file selection dialog for selection of an Analyze image. After selecting
+a fileset, the Analyze image will appear in the 
+
+<h2>
+Threshold selection</h2>
+The next step in creation of the isosurfaces i selection of the threshold. A wanted 
+threshold can be selected by changing the threshold slider, inputting a value 
+in the treshold value box, or by clicking the "Threshold Profile" graph. The "Threshold 
+Profile" graph is created by clicking the "Threshold profile" button of <tt>d3template</tt>. 
+The user is then asked to select two points within the <A HREF="volView.html">volume 
+browser</A>. The two points should be situated on each side of the surface one 
+wants to model, in this case the skin surface. The <A HREF="volView.html">volume 
+browser</A> draws a line between the two selected points:<BR>
+<BR>
+<IMG SRC="pics/d3template1.jpg" ALT="Selection of a threshold profile" WIDTH="652" HEIGHT="545"><BR>
+<BR>
+The dataset is then sampled along the line between the two points, and the data values along the line are plotted in
+the "Threshold Profile" graph:<BR><BR>
+<IMG SRC="pics/d3template2.jpg" ALT="Plot of a threshold profile" WIDTH="908" HEIGHT="442"><BR>
+<BR>
+A reasonable threshold is then selected by clicking on the "Threshold Profile" 
+graph at aproximately the mid-value of the surface one wants to model (in this 
+case the skin surface). To check if the selected threshold is reasonable, click 
+the "Threshold Mask" button and data with value lower than the threshold will 
+be masked out in the <A HREF="volView.html">volume browser</A> : <BR>
+<BR>
+<IMG SRC="pics/d3template3.jpg" ALT="Threshold Mask applied" WIDTH="652" HEIGHT="545"><BR>
+<BR>
+In this case the mask color is blue - a different color is selected using the 
+<A HREF="colsel.html">color selector</A>, by clicking the "Mask color" button. 
+<h2>
+Creating a high resolution model</h2>
+When the result of applying the threshold mask looks reasonable, we can start creating a surface model. This is done by clicking the
+"Process Threshold" button. This will start the external isosurface routine created by Jesper James Jensen of IMM, DTU. Since isosurfacing
+is not a simple mathematical problem, now would be a good time to have a break :-). After maximum 10 minutes (the time used 
+depends strongly of dataset resolution) a surface model should appear:<BR><BR>
+<IMG SRC="pics/d3template4.jpg" ALT="High resolution surface model" WIDTH="572" HEIGHT="506"><BR>
+<BR>
+<h2>
+Reduction models</h2>
+Once the high resolution model look appealing, press the "lock model" of the high 
+resolution model. Will will now start reducing the model for minimizing later 
+calculation time in <A HREF="d3view_manual.html"><tt>d3view</tt></A>. Select a 
+reduction factor 0 &lt; <EM>f</EM> &lt; 1 in the box below "Org. # Faces". The 
+reduced model will then have approximately <EM>f</EM> times lower number of triangles 
+than the high resolution model. Now press the "Reduce Model" button. After up 
+to 2 times the time you waited before, a reduced model should appear:<BR>
+<BR>
+<IMG SRC="pics/d3template5.jpg" ALT="Example of a reduced model" WIDTH="572" HEIGHT="506"> 
+<BR>
+<BR>
+Create as many reduced models as wanted, and lock the ones you would like to save for later use, by pressing their "lock model" buttons.
+<H2>Saving a template</H2>
+When you are done creating models, simply press the "Save Template" button of 
+<tt>d3template</tt>, and select a filename. You have now created a new MR template 
+for use in <A HREF="d3view_manual.html"><tt>d3view</tt></A>.<BR>
+<BR>
+End of d3template info page.
+
+
+</body>
+</html>

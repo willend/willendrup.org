@@ -1,0 +1,61 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.5 [en] (X11; I; HP-UX B.10.20 9000/782) [Netscape]">
+   <title>nru_view Users' Manual</title>
+</head>
+<body>
+
+<blockquote>
+<center>
+<h1>
+d3view Users tutorial (2): Loading files
+</h1></center>
+</blockquote>
+
+<IMG SRC="pics/cmdwin.jpg" ALT="d3view Command vindow" WIDTH="227" HEIGHT="283"><BR>
+<BR>
+Note: Anatomical and functional data <STRONG>MUST</STRONG> be coregistered for production
+of understandable graphics.
+
+<H2>Loading anatomical data</H2>
+
+
+MR templates created using <A HREF="d3template.html"><TT>d3template</TT></A> can 
+be loaded by pressing the "Open MR template" button of <TT>d3view</TT>. If you 
+do not have an MR template, you can use a standard template from the directory 
+<TT>&lt;d3view base dir&gt;/Templates</TT> or create your own template from a 
+standard SPM Analyze image using <A HREF="d3template.html"><tt>d3template</tt></A>. 
+<tt>d3template</tt> is started from the matlab command prompt, or by pressing 
+the "Create MR template" button of <TT>d3view</TT>.<BR>
+<BR>
+Once the anatomical data have been loaded, the data are presented in the volume 
+browser (<A HREF="volView.html"><tt>volView</tt></A>):<BR>
+<BR>
+<A HREF="volView.html"><IMG SRC="pics/oorigin.jpg" ALT="volView volume browser" WIDTH="652" HEIGHT="545"></A><BR>
+<BR>
+<A HREF="volView.html"><tt>volView</tt></A> is a common component of several of 
+the NRU imaging tools. Dataset parameters are presented in the "Loaded files" 
+window:<BR>
+<BR>
+<IMG SRC="pics/loaded_1.jpg" ALT="d3view Loaded files window" WIDTH="612" HEIGHT="93"> 
+<BR>
+<BR>
+<BR>
+<H2>Loading fuctional data</H2>
+
+For functional data, SPM Analyze format images are used. In principle as many 
+functional datsets as needed can be loaded, but ofcourse workstation memory sets
+a limit. Functional (PET) datasets are loaded by pressing the "Open analyze PET data"
+button of <TT>d3view</TT>.
+<BR><BR>
+When a dataset has been loaded, parameters of the dataset will are presented in the "Loaded files" window:
+<BR><BR>
+<IMG SRC="pics/loaded.jpg" ALT="d3view Loaded files window" WIDTH="799" HEIGHT="143"><BR>
+<BR>
+<BR><BR>
+<A HREF="imgProblem1.html">Next</A> tutorial item: <A HREF="imgProblem1.html">Understanding 
+the imaging problem - anatomy</A>. 
+</body>
+</html>

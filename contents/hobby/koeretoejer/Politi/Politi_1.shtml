@@ -1,0 +1,30 @@
+<html> <head> <title>Gallery item</title> <style type="text/css"> td.thickBorder{ border: solid #00ff00 3px;} </style> </head> <body> <table border=0> <tr> <td width="20%">
+<p><b><a href="index.shtml"><img src="arrow-up.png"></a></b><p>
+<h1>Politibiler</h1>
+Diverse politibiler
+</td> <td> <table border=0 align=center cellpadding=0> <tr>
+<td colspan=7><a target=_blank href="Hjemmelavede.jpg"><img src="1_640pix.jpg"></a></td></tr><tr>
+<td colspan=7>
+<h1>Politibiler</h1>
+<p>3 stk. hjemmelavede patruljevogne (venstre mod h&oslash;jre):
+<ul>
+<li>Ford Taunus 1970 eller 71?, som Tog og Tekno's tilsvarende model. Grundmodel Brekina, decals fra Stoppel Hobby. Er ikke sikker p&aring; at der findes et forbillede der er ensfarvet hvid. Forbilleder kan ses <a target=_blank href="http://www.123hjemmeside.dk/Politibiler/17291883">her</a>
+<li>Ford Granada 1983. Grundmodel Herpa, decals fra Stoppel Hobby. Forbilleder kan ses <a target=_blank href="http://www.123hjemmeside.dk/Politibiler/17295886">her</a>
+<li>Volvo 145 hundevogn 1970?, forbedret udfra Tog og Tekno bil med bl&aring;t blink. Grundmodel Brekina/Tog og Tekno, decals fra Stoppel Hobby. Er ikke sikker p&aring; at der findes et forbillede der er ensfarvet hvid. Et andet forbillede kan ses <a target=_blank href="http://www.123hjemmeside.dk/Politibiler/17291872">her</a>
+</ul>
+</td></tr><tr><td>
+<img src="arrow-left.png">
+</td><td align=center>
+</td><td align=center>
+</td><td align=center class="thickBorder">
+<img src="1_thumb.jpg">
+</td><td align=center>
+<a href="Politi_2.shtml"><img src="2_thumb.jpg"></a>
+</td><td align=center>
+</td><td align=right>
+<a href="Politi_2.shtml">
+<img src="arrow-right.png">
+</a>
+</td></tr><td>
+</td></tr> </table> </td> </tr> </table>
+</body></html>

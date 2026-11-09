@@ -1,0 +1,28 @@
+<html> <head> <title>Gallery item</title> <style type="text/css"> td.thickBorder{ border: solid #00ff00 3px;} </style> </head> <body> <table border=0> <tr> <td width="20%">
+<p><b><a href="index.shtml"><img src="arrow-up.png"></a></b><p>
+<h1>Modeltog</h1>
+Jeg har en st&oslash;rre samling af modeltog. I dette galleri kan du se et antal af mine 80'er passager-togstammer forsp&aelig;ndt historisk DSB og OHJ tr&aelig;kkraft.
+</td> <td> <table border=0 align=center cellpadding=0> <tr>
+<td colspan=7><a target=_blank href="IMG_1250.JPG"><img src="49_640pix.jpg"></a></td></tr><tr>
+<td colspan=7>
+</td></tr><tr><td>
+<a href="modeltog_48.shtml">
+<img src="arrow-left.png">
+</a>
+</td><td align=center>
+<a href="modeltog_47.shtml"><img src="47_thumb.jpg"></a>
+</td><td align=center>
+<a href="modeltog_48.shtml"><img src="48_thumb.jpg"></a>
+</td><td align=center class="thickBorder">
+<img src="49_thumb.jpg">
+</td><td align=center>
+<a href="modeltog_50.shtml"><img src="50_thumb.jpg"></a>
+</td><td align=center>
+<a href="modeltog_51.shtml"><img src="51_thumb.jpg"></a>
+</td><td align=right>
+<a href="modeltog_50.shtml">
+<img src="arrow-right.png">
+</a>
+</td></tr><td>
+</td></tr> </table> </td> </tr> </table>
+</body></html>

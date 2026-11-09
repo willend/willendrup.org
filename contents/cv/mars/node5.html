@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Main Program</TITLE>
+<META NAME="description" CONTENT="Main Program">
+<META NAME="keywords" CONTENT="mars">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="mars.css">
+
+<LINK REL="next" HREF="node8.html">
+<LINK REL="previous" HREF="node4.html">
+<LINK REL="up" HREF="node4.html">
+<LINK REL="next" HREF="node6.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html206"
+  HREF="node6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html204"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html198"
+  HREF="node4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html207"
+  HREF="node6.html">Control functions</A>
+<B> Up:</B> <A NAME="tex2html205"
+  HREF="node4.html">Program Design</A>
+<B> Previous:</B> <A NAME="tex2html199"
+  HREF="node4.html">Program Design</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00031000000000000000">
+Main Program</A>
+</H2>
+The main program, named <B>MARS</B>, provides the glue to fit
+together the registration subtasks described above. The program is
+started by isuing <TT>'mars'</TT> on the Matlab 6 command
+prompt. The main program then starts, reads in setup information from
+the script 
+<BR> 
+<BR>
+matlab/mars/PVEOutSetup.m,
+<BR> 
+<BR>
+which should be customised to match the local setup<A NAME="tex2html9"
+  HREF="footnode.html#foot525"><SUP>1</SUP></A>
+<BR> 
+<BR>
+Next, the main
+program interface appears (Figure <A HREF="#main.ps">3.1</A>)
+<BR> 
+<BR>
+<DIV ALIGN="CENTER"><A NAME="main.ps"></A><A NAME="72"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 1:</STRONG>
+The main program interface of MARS</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<A NAME="tex2html11"
+  HREF="../images/main.png"><IMG
+ WIDTH="334" HEIGHT="252" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="\includegraphics[width=0.6\textwidth]{images/main.ps}"></A>
+
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+The interface is used for 
+
+<P>
+
+<UL>
+<LI>Selection of Standard File / Reslice File(s), what image(s)
+    should be registered to which image?
+</LI>
+<LI>Selection of the registration method to use. (More on this topic below)
+</LI>
+<LI>Selection of 'inspection' module. Visually inspecting
+    registration output is important for catching possible
+    registration problems.
+</LI>
+<LI>Reading/Saving coregistration mathematics (up to 12 parameter affine)
+</LI>
+<LI>Reslicing of the image(s).
+</LI>
+</UL>
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html208"
+  HREF="node6.html">Control functions</A>
+<LI><A NAME="tex2html209"
+  HREF="node7.html">Common features of the NRU programs</A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+<ADDRESS>
+Claus Svarer
+2006-01-11
+</ADDRESS>
+</BODY>
+</HTML>

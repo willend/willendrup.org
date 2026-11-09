@@ -1,0 +1,6 @@
+<h2>Fort Transit ligvogn/kadaverbil</h2>
+<ul>
+<li>Grundmodel: Ford Transit varevogn, fra Brekina.
+<li>&AElig;ndringer: Decals fra Stoppel Hobby og ventilator fremstillet af plasticcard
+<li>Noter: 
+</ul>

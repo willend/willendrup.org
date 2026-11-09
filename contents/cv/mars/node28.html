@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Interface Specification</TITLE>
+<META NAME="description" CONTENT="Interface Specification">
+<META NAME="keywords" CONTENT="mars">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="mars.css">
+
+<LINK REL="previous" HREF="node27.html">
+<LINK REL="up" HREF="node27.html">
+<LINK REL="next" HREF="node29.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html447"
+  HREF="node29.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html445"
+  HREF="node27.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html441"
+  HREF="node27.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html448"
+  HREF="node29.html">Example data</A>
+<B> Up:</B> <A NAME="tex2html446"
+  HREF="node27.html">Reslice modules</A>
+<B> Previous:</B> <A NAME="tex2html442"
+  HREF="node27.html">Reslice modules</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00035100000000000000">
+Interface Specification</A>
+</H3>
+A valid reslicing module is a Matlab function with the following
+structure (Part of code from Reslice.m).
+<PRE>
+function imgO=Reslice(Struct,method,sincparms);
+%
+% function imgO=Reslice(Struct,[method]);
+%   
+%   Function to reslice an Analyze image using 
+%   affine 12-parameter transformation matrix.
+%  
+% Inputs:
+%  
+%   Struct has the fields
+%   hdrI - input file Analyze header
+%   hdrO - output file Analyze header
+%   A - 12 parm. affine transformation matrix 
+%       for application xyzO=A*xyzI. A is in 
+%       real world (mm) coordinates.
+%   [imgI] - optional field. If Struct has this field,
+%            the input data are taken from here. Otherwise,
+%            the image given in hdrI.name is loaded.
+%   [imgO] - optional field. If Struct has this field, the output
+%            is non-empty, and no datafile is written to disk.
+%
+%   method - defines what interpolation method to use. If none
+%            is given, 'linear' is assumed.
+%
+% Output:
+%   imgO - Output Analyze Img data. only non-empty if the field 
+%          'imgO' exists in Struct.
+%
+%   Warning: Output is written to hdr0.name without checking.
+%   Checking should be done beforehand, e.g. using uiputfile.
+%   hdr.origin information is assumed correct.
+%   
+%   
+%   Note: A third input parameter - sincparms - is unused, but 
+%   needed for concistency whith ResliceWarp and ResliceAir
+%
+%   PW, NRU, 2001
+%
+
+% The following string defines that this is a reslice module. The
+% latter part of the string defines what to write on the main interface.
+
+% RESLICEDESC interp3 (Matlab)
+  
+  % Check for definition of temp area. Defaults to /tmp
+  global TEMP_AREA;
+  if isempty(TEMP_AREA)
+    TEMP_AREA='/tmp';
+  end
+</PRE>
+The following reslice modules are supplied with the PVEOut
+registration package:
+
+<UL>
+<LI>warp_reslice (mriwarp) (*)
+</LI>
+<LI>reslice (Air 5.0) (*)
+</LI>
+<LI>interp3 (Matlab built-in)
+</LI>
+</UL>
+<B>Note:</B> The modules marked by asterisks (*) require external
+programs to reslice data. It is generally recommended to use
+warp_reslice or interp3, since the reslice program from the Air
+package does not keep correct bit resolution on the resliced images.
+
+<P>
+<BR><HR>
+<ADDRESS>
+Claus Svarer
+2006-01-11
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Common features of the NRU programs</TITLE>
+<META NAME="description" CONTENT="Common features of the NRU programs">
+<META NAME="keywords" CONTENT="mars">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="mars.css">
+
+<LINK REL="previous" HREF="node6.html">
+<LINK REL="up" HREF="node5.html">
+<LINK REL="next" HREF="node8.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html226"
+  HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html224"
+  HREF="node5.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html220"
+  HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html227"
+  HREF="node8.html">Registration modules</A>
+<B> Up:</B> <A NAME="tex2html225"
+  HREF="node5.html">Main Program</A>
+<B> Previous:</B> <A NAME="tex2html221"
+  HREF="node6.html">Control functions</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00031200000000000000">
+Common features of the NRU programs</A>
+</H3>
+Some features are common to many of the Matlab programs developed at
+NRU. The usage of these is explained in this section.
+<BR> 
+<BR><B>Colormap editing:</B> In many of the programs for visualisation of
+image data, the change of colormap settings is made in the same
+way. 
+
+<DIV ALIGN="CENTER"><A NAME="3-pane"></A><A NAME="101"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 2:</STRONG>
+3-pane image viewer</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<A NAME="tex2html14"
+  HREF="../images/ips_slice3_std.png"><IMG
+ WIDTH="250" HEIGHT="211" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="\includegraphics[width=0.45\textwidth]{images/ips_slice3_std.ps}"></A>
+
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+In e.g. the 3-pane image viewer (Figure <A HREF="#3-pane">2</A>), changes
+can be made by double clicking the shown colorbar using the mouse.
+Left double clicking  brings up the colormap selector (left in Figure
+<A HREF="#cmap">3</A>). From its menu, colormaps can be selected from a
+predefined list, and the current colormap inverted or edited. Editing
+the colormap is done using the color editor (middle in Figure
+<A HREF="#cmap">3</A>). Double clicking any color field brings up the single
+color selecor (right in Figure <A HREF="#cmap">3</A>), from which any RGB color
+can be defined. To interpolate between two colors in the color editor,
+right click the first color, and drag to the other color.
+
+<DIV ALIGN="CENTER"><A NAME="cmap"></A><A NAME="117"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 3:</STRONG>
+Colormap selector, color editor and single color selector</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<A NAME="tex2html16"
+  HREF="../images/cmap.png"><IMG
+ WIDTH="112" HEIGHT="238" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="\includegraphics[width=0.2\textwidth]{images/cmap.ps}"></A>
+<A NAME="tex2html17"
+  HREF="../images/cedit.png"><IMG
+ WIDTH="222" HEIGHT="186" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="\includegraphics[width=0.4\textwidth]{images/cedit.ps}"></A>
+<A NAME="tex2html18"
+  HREF="../images/csingle.png"><IMG
+ WIDTH="167" HEIGHT="164" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.png"
+ ALT="\includegraphics[width=0.3\textwidth]{images/csingle.ps}"></A>
+
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+<BR> 
+<BR>
+To adjust limits of a given colormap, (e.g. in Figure
+<A HREF="#3-pane">2</A>), right double click the shown colorbar. This will
+present til color limit selector (Figure <A HREF="#clim.ps">4</A>)
+
+<DIV ALIGN="CENTER"><A NAME="clim.ps"></A><A NAME="127"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 4:</STRONG>
+Color limit selector.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<A NAME="tex2html20"
+  HREF="../images/clim.png"><IMG
+ WIDTH="167" HEIGHT="94" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="\includegraphics[width=0.3\textwidth]{images/clim.ps}"></A>
+
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+Changing the min and max values, will scale the current colormap to
+these values, since values v&gt;max are set to max, and v&lt;min are set to min.
+<B>Note:</B> In some programs, e.g. IIO and inspect, this functionality
+is realised using input fields on the user interface.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html226"
+  HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html224"
+  HREF="node5.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html220"
+  HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html227"
+  HREF="node8.html">Registration modules</A>
+<B> Up:</B> <A NAME="tex2html225"
+  HREF="node5.html">Main Program</A>
+<B> Previous:</B> <A NAME="tex2html221"
+  HREF="node6.html">Control functions</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Claus Svarer
+2006-01-11
+</ADDRESS>
+</BODY>
+</HTML>

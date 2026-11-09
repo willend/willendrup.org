@@ -1,0 +1,30 @@
+<html> <head> <title>Gallery item</title> <style type="text/css"> td.thickBorder{ border: solid #00ff00 3px;} </style> </head> <body> <table border=0> <tr> <td width="20%">
+<p><b><a href="index.shtml"><img src="arrow-up.png"></a></b><p>
+<h1>Redningsvogne</h1>
+Diverse Falck rednings- og dykkervogne.
+</td> <td> <table border=0 align=center cellpadding=0> <tr>
+<td colspan=7><a target=_blank href="ToyotaLC.jpg"><img src="4_640pix.jpg"></a></td></tr><tr>
+<td colspan=7>
+<h2>Toyota Landcruiser</h2>
+<ul>
+<li>Industrimodel: Toyota Landcruiser fra Busch
+<li>Forbedringer: Kassen p&aring; taget er gjort lidt smallere og stigen er lagt ned.
+<Li>Forbillede: <a target=_blank href="http://www.beredskab-lolland.dk/side471.html">Falck Ringe (foto: beredskab-lolland.dk) dog anden type kasse p&aring; taget</a>
+</ul>
+</td></tr><tr><td>
+<a href="Redningsvogne_3.shtml">
+<img src="arrow-left.png">
+</a>
+</td><td align=center>
+<a href="Redningsvogne_2.shtml"><img src="2_thumb.jpg"></a>
+</td><td align=center>
+<a href="Redningsvogne_3.shtml"><img src="3_thumb.jpg"></a>
+</td><td align=center class="thickBorder">
+<img src="4_thumb.jpg">
+</td><td align=center>
+</td><td align=center>
+</td><td align=right>
+<img src="arrow-right.png">
+</td></tr><td>
+</td></tr> </table> </td> </tr> </table>
+</body></html>

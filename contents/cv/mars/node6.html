@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Control functions</TITLE>
+<META NAME="description" CONTENT="Control functions">
+<META NAME="keywords" CONTENT="mars">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="mars.css">
+
+<LINK REL="next" HREF="node7.html">
+<LINK REL="previous" HREF="node5.html">
+<LINK REL="up" HREF="node5.html">
+<LINK REL="next" HREF="node7.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html218"
+  HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html216"
+  HREF="node5.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html210"
+  HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html219"
+  HREF="node7.html">Common features of the</A>
+<B> Up:</B> <A NAME="tex2html217"
+  HREF="node5.html">Main Program</A>
+<B> Previous:</B> <A NAME="tex2html211"
+  HREF="node5.html">Main Program</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00031100000000000000">
+Control functions</A>
+</H3>
+Below, the different buttons on the <A NAME="tex2html12"
+  HREF="../images/main.png">main program
+  interface</A>
+can be found.
+<BR> 
+<BR><B>Standard File:</B> The 'standard file' defines the space to which we
+want to register the reslice file(s). Thus, only one standard file can
+be defined at a time. Example: One T1 MR dataset.
+<BR> 
+<BR><B>Reslice File:</B> The 'reslice file(s)' defines the datasets we want
+transfered to the space of the 'standard file'. In principle, any
+number of reslice files can be defined. <B>Note:</B> Not all of the
+coregistration methods can work with several reslice files, and you
+will be prompted to select one. A set of coregistration parameters is
+defined for each of the reslice files on the list. If any reslice
+files are loaded when the 'Reslice Fils(s)' button is pressed, you
+will be presented with a dialog asking if you want to Add files, Clear
+one/all, or cancel. The first option adds files to the list, and the
+second option allows you to replace one or all datasets. Clearing
+'one' dataset will not overwrite existing parameters. When adding
+files to the list, you will be prompted to select a dataset defining
+registration parameters. This possibility allows for reslicing other
+datasets than the currently loaded reslice dataset.
+<BR> 
+<BR><B>Swap direction:</B> This button allows you to make one of the
+reslice datasets the standard dataset, and hence make the selected
+standard dataset a reslice dataset by inversion.
+<BR> 
+<BR><B>Read / Save maths:</B> This button set allows you to read or save
+registration parameters for at single reslice dataset. Example: an Air
+5.0 file.
+<BR> 
+<BR><B>Load / Save State:</B> This button set allows you to read or save
+the overall state of MARS, including selected filenames, chosen
+registration method etc. <B>Note:</B> This is always done automaticly on
+program startup / exit. The buttons give you the possibility of saving
+/ reading the data to / from a user selectable file. The Load Defaults
+button loads a system-wide 'state'.
+<BR> 
+<BR><B>Run Method:</B> Starts the selected coregistration
+'module'. Examples are: IPS (NRU), IIO (NRU), Air 3.0 (Roger
+P. Woods), SPM99 (John Ashburner, fil). This button makes the
+MARS interface invisible. The main interface will return once the
+coregistration module execution has ended.
+<BR> 
+<BR><B>Do Inspection:</B> Allows you to visualise two registered datasets,
+by use of a set of selectable 'modules' for this task. An example is
+'inspect', which is able to visualise axial, coronal and sagital
+slices. 'inspect' does not need to reslice the reslice dataset before
+visualising, making the program fast. Visualisation is possible in two
+ways: "Overlayed" (transparent reslice dataset on top of the standard
+dataset) or "Side by side" (the two datasets oresented together). A
+running coregistration method has the possibility of visualising
+registration output using the method selected on the MARS
+interface. 
+<BR> 
+<BR><B>Reslice Imgs.:</B> This button allows you to reslice the selected
+images using the parameters returned from a registration method. If
+the standard dataset is selected to be resliced, you will be prompted
+to select the reslice dataset to reslice to. The voxel parameters of
+the output datasets are adjustable using this interface:
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html218"
+  HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html216"
+  HREF="node5.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html210"
+  HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html219"
+  HREF="node7.html">Common features of the</A>
+<B> Up:</B> <A NAME="tex2html217"
+  HREF="node5.html">Main Program</A>
+<B> Previous:</B> <A NAME="tex2html211"
+  HREF="node5.html">Main Program</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Claus Svarer
+2006-01-11
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,6 @@
+<h2>Toyota Landcruiser</h2>
+<ul>
+<li>Industrimodel: Toyota Landcruiser fra Busch
+<li>Forbedringer: Kassen p&aring; taget er gjort lidt smallere og stigen er lagt ned.
+<Li>Forbillede: <a target=_blank href="http://www.beredskab-lolland.dk/side471.html">Falck Ringe (foto: beredskab-lolland.dk) dog anden type kasse p&aring; taget</a>
+</ul>

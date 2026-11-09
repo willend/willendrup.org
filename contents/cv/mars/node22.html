@@ -1,0 +1,163 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>inspect</TITLE>
+<META NAME="description" CONTENT="inspect">
+<META NAME="keywords" CONTENT="mars">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="mars.css">
+
+<LINK REL="next" HREF="node23.html">
+<LINK REL="previous" HREF="node21.html">
+<LINK REL="up" HREF="node20.html">
+<LINK REL="next" HREF="node23.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html393"
+  HREF="node23.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html391"
+  HREF="node20.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html385"
+  HREF="node21.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html394"
+  HREF="node23.html">browse2d</A>
+<B> Up:</B> <A NAME="tex2html392"
+  HREF="node20.html">Inspection modules</A>
+<B> Previous:</B> <A NAME="tex2html386"
+  HREF="node21.html">Interface Specification</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00033200000000000000"></A>
+<A NAME="inspectsection"></A>
+<BR>
+inspect
+</H3>
+The inspect module, also described elsewhere, provides fast, simple and
+powerful means of visualisation of registered datasets. When Matlab
+version 6.X is available, the new transparancy features are utilised
+for image overlays (Figure <A HREF="#overlays">24</A>). The overlayed image is
+calculated on the fly, meaning that time consuming writing of resliced
+volume datasets to disk is not needed.
+
+<DIV ALIGN="CENTER"><A NAME="overlays"></A><A NAME="424"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 24:</STRONG>
+Axial, coronal and sagital overlay images</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<A NAME="tex2html86"
+  HREF="../images/inspect_overlay_axial.png"><IMG
+ WIDTH="167" HEIGHT="142" ALIGN="BOTTOM" BORDER="0"
+ SRC="img31.png"
+ ALT="\includegraphics[width=0.3\textwidth]{images/inspect_overlay_axial.ps}"></A>
+<A NAME="tex2html87"
+  HREF="../images/inspect_overlay_coronal.png"><IMG
+ WIDTH="167" HEIGHT="142" ALIGN="BOTTOM" BORDER="0"
+ SRC="img32.png"
+ ALT="\includegraphics[width=0.3\textwidth]{images/inspect_overlay_coronal.ps}"></A>
+<A NAME="tex2html88"
+  HREF="../images/inspect_overlay_sagital.png"><IMG
+ WIDTH="167" HEIGHT="142" ALIGN="BOTTOM" BORDER="0"
+ SRC="img33.png"
+ ALT="\includegraphics[width=0.3\textwidth]{images/inspect_overlay_sagital.ps}"></A>
+
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+If overlays are not prefered, the registered images can be visualised
+'side-by-side' instead (Figure <A HREF="#sideways">25</A>).
+
+<DIV ALIGN="CENTER"><A NAME="sideways"></A><A NAME="435"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 25:</STRONG>
+Axial view, overlay and side-by-side view.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<A NAME="tex2html90"
+  HREF="../images/inspect_overlay_axial.png"><IMG
+ WIDTH="167" HEIGHT="142" ALIGN="BOTTOM" BORDER="0"
+ SRC="img31.png"
+ ALT="\includegraphics[width=0.3\textwidth]{images/inspect_overlay_axial.ps}"></A>
+<A NAME="tex2html91"
+  HREF="../images/inspect_sideways_axial.png"><IMG
+ WIDTH="167" HEIGHT="142" ALIGN="BOTTOM" BORDER="0"
+ SRC="img34.png"
+ ALT="\includegraphics[width=0.3\textwidth]{images/inspect_sideways_axial.ps}"></A>
+
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+Selection of visualisation mode is done by pressing the 'Transparancy'
+button. Pressing the x/y/z buttons will select sagital, coronal and
+axial views of the registered images. The shown slice number can be
+adjusted by changing the value of the vertical slider at the bottom of
+the window. For easy, systematic inspection of the full volume
+dataset, a 'movie' feature is available. Firstly, the slices to view
+are selected by pressing the 'Mov. Int.' (Movie interval) button. A
+dialogue appears (Figure <A HREF="#inspect_intervals.ps">26</A>), with adjustable
+minimum/maximum slice and slice step length.
+
+<DIV ALIGN="CENTER"><A NAME="inspect_intervals.ps"></A><A NAME="444"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 26:</STRONG>
+Adjustment, 'movie' interval</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<A NAME="tex2html93"
+  HREF="../images/inspect_intervals.png"><IMG
+ WIDTH="251" HEIGHT="165" ALIGN="BOTTOM" BORDER="0"
+ SRC="img35.png"
+ ALT="\includegraphics[width=0.45\textwidth]{images/inspect_intervals.ps}"></A>
+
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+Pressing the 'Movie' button will now show a little
+<A NAME="tex2html94"
+  HREF="../images/mov/movie_fast.gif">movie</A>
+of the
+selected, registered slices.
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html393"
+  HREF="node23.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html391"
+  HREF="node20.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html385"
+  HREF="node21.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html394"
+  HREF="node23.html">browse2d</A>
+<B> Up:</B> <A NAME="tex2html392"
+  HREF="node20.html">Inspection modules</A>
+<B> Previous:</B> <A NAME="tex2html386"
+  HREF="node21.html">Interface Specification</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Claus Svarer
+2006-01-11
+</ADDRESS>
+</BODY>
+</HTML>

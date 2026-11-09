@@ -1,0 +1,55 @@
+name: pages
+
+# Static build for GitHub Pages: latex2html renders the CV into contents/cv,
+# then createweb.pl builds the site with the SSI resolved inline.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0     # full history for the "Last Modified" dates...
+          filter: blob:none  # ...without downloading old file versions
+
+      - id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Install latex2html
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq --no-install-recommends latex2html texlive-latex-recommended texlive-fonts-recommended netpbm ghostscript > /dev/null
+
+      - name: CV (latex2html)
+        working-directory: contents
+        run: latex2html -dir cv cv.tex
+
+      - name: Build site
+        run: perl tools/createweb.pl -c contents -s specialcontents -l layout -w _site -p "${{ steps.pages.outputs.base_path }}"
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,5 @@
+<h2>Scania Vabis kranvogn</h2>
+<ul>
+<li>Grundmodel: Scania Vabis Falck-kranvogn fra Brekina/Epoke modeller
+<li>Forbedringer: Spejle og falck-logoer.
+</ul>

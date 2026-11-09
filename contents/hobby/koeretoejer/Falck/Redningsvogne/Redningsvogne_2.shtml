@@ -1,0 +1,33 @@
+<html> <head> <title>Gallery item</title> <style type="text/css"> td.thickBorder{ border: solid #00ff00 3px;} </style> </head> <body> <table border=0> <tr> <td width="20%">
+<p><b><a href="index.shtml"><img src="arrow-up.png"></a></b><p>
+<h1>Redningsvogne</h1>
+Diverse Falck rednings- og dykkervogne.
+</td> <td> <table border=0 align=center cellpadding=0> <tr>
+<td colspan=7><a target=_blank href="IMG_0843.jpg"><img src="2_640pix.jpg"></a></td></tr><tr>
+<td colspan=7>
+<h2>Mercedes 613D</h2>
+<ul>
+<li>Grundmodel: Mercedes brandbil fra Wiking.
+<li>Forbedringer: Ekstra blink, ny kofanger for, decals fra Stoppel Hobby
+<li>Forbillede: Ikke direkte, men en lignende type har k&oslash;rt som dykkervogn hos <a target=_blank href="http://www.beredskabsbilleder.dk/gallery/displayimage.php?album=5&pid=707#top_display_media">Falck-g&aring;rden i &Aring;rhus (foto:bereskabsbilleder.dk)</a>
+</ul>
+</td></tr><tr><td>
+<a href="Redningsvogne_1.shtml">
+<img src="arrow-left.png">
+</a>
+</td><td align=center>
+</td><td align=center>
+<a href="Redningsvogne_1.shtml"><img src="1_thumb.jpg"></a>
+</td><td align=center class="thickBorder">
+<img src="2_thumb.jpg">
+</td><td align=center>
+<a href="Redningsvogne_3.shtml"><img src="3_thumb.jpg"></a>
+</td><td align=center>
+<a href="Redningsvogne_4.shtml"><img src="4_thumb.jpg"></a>
+</td><td align=right>
+<a href="Redningsvogne_3.shtml">
+<img src="arrow-right.png">
+</a>
+</td></tr><td>
+</td></tr> </table> </td> </tr> </table>
+</body></html>

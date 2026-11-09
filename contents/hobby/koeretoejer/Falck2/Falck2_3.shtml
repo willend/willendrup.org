@@ -1,0 +1,34 @@
+<html> <head> <title>Gallery item</title> <style type="text/css"> td.thickBorder{ border: solid #00ff00 3px;} </style> </head> <body> <table border=0> <tr> <td width="20%">
+<p><b><a href="index.shtml"><img src="arrow-up.png"></a></b><p>
+<h1>Falck k&oslash;ret&oslash;jer</h1>
+I de underliggende gallerier kan du se mine modeller af Falck biler.
+</td> <td> <table border=0 align=center cellpadding=0> <tr>
+<td colspan=7><a target=_blank href="IMG_0831.jpg"><img src="3_640pix.jpg"></a></td></tr><tr>
+<td colspan=7>
+<h2>VW T2 vejservice</h2>
+<ul>
+<li>Grundmodel: VW T2 med h&oslash;jt tag fra Brekina
+<li>&AElig;ndringer: Maling, vejservice skilt incl. bef&aelig;stelse, sidespejle. Decals fra Stoppel Hobby.
+<li>Billede af forbilledet: <a target=_blank href="http://www.flickr.com/photos/perryolf/3270156434/in/set-72157601630915140">Falck Aalborg (foto:perryolf, flickr)</a>
+</ul>
+</td></tr><tr><td>
+<a href="Falck2_2.shtml">
+<img src="arrow-left.png">
+</a>
+</td><td align=center>
+<a href="Falck2_1.shtml"><img src="1_thumb.jpg"></a>
+</td><td align=center>
+<a href="Falck2_2.shtml"><img src="2_thumb.jpg"></a>
+</td><td align=center class="thickBorder">
+<img src="3_thumb.jpg">
+</td><td align=center>
+<a href="Falck2_4.shtml"><img src="4_thumb.jpg"></a>
+</td><td align=center>
+<a href="Falck2_5.shtml"><img src="5_thumb.jpg"></a>
+</td><td align=right>
+<a href="Falck2_4.shtml">
+<img src="arrow-right.png">
+</a>
+</td></tr><td>
+</td></tr> </table> </td> </tr> </table>
+</body></html>

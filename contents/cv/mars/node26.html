@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Interface Specification</TITLE>
+<META NAME="description" CONTENT="Interface Specification">
+<META NAME="keywords" CONTENT="mars">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="mars.css">
+
+<LINK REL="previous" HREF="node25.html">
+<LINK REL="up" HREF="node25.html">
+<LINK REL="next" HREF="node27.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html430"
+  HREF="node27.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html428"
+  HREF="node25.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html424"
+  HREF="node25.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html431"
+  HREF="node27.html">Reslice modules</A>
+<B> Up:</B> <A NAME="tex2html429"
+  HREF="node25.html">Read/Save Math modules</A>
+<B> Previous:</B> <A NAME="tex2html425"
+  HREF="node25.html">Read/Save Math modules</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00034100000000000000">
+Interface Specification</A>
+</H3>
+A valid module for reading registration data into MARS has the
+following structure (Part of code from ReadCor.m).
+<PRE>
+function [A,Struct]=ReadCor(corfile)
+% function [A,Struct]=ReadCor(corfile)
+%   
+%  Function to read coregistration data from NRU cor format.
+%  Input is corfile (.cor filename to read) and 
+%  ouputs
+%
+%  A -  "real world" / talairach space transformation matrix 
+%  Struct with fields
+%    A - "real world" / talairach space transformation matrix    
+%    hdrI - input space Analyze hdr
+%    hdrO - output space Analyze hdr
+%    descr - descriptive string
+%
+%  NRU cor format is simply a matlab .mat file (with extension
+%  .cor). The contents is the above Struct, as well as the variable
+%  'filetype', with value 'nru_cor';
+%
+%  Warning: Existence of corfile is not checked - must be done
+%  before calling ReadCor, e.g. using uigetfile
+%
+%  PW, NRU, 2001
+%  
+
+% This string defines that this is a Math reading module, what string
+% to put in the main interface, and the extension of the files to be read.
+  
+% MATHREADDESC NRU COR format (*.cor)
+</PRE>
+A valid module for saving registration data from MARS has the
+following structure (Part of code from SaveCor.m).
+<PRE>
+function message=SaveCor(corfile,Struct)
+%
+% function SaveCor(corfile,Struct)
+%   
+%  Function to save coregistration data to NRU cor format.
+%  Inputs are airfile (output filename) and 
+%  Struct with fields
+%    A - "real world" / talairach space transformation matrix    
+%    hdrI - input space Analyze hdr
+%    hdrO - output space Analyze hdr
+%    descr - descriptive string
+%
+%  NRU cor format is simply a matlab .mat file (with extension
+%  .cor). The contents is the above Struct, as well as the variable
+%  'filetype', with value 'nru_cor';
+%  
+%   Warning: Output is written to 'corfile' without checking.
+%   Checking should be done beforehand, e.g. using uiputfile.
+%
+%
+%  PW, NRU, 2001
+%
+  
+% This string defines that this is a Math saving module, what string
+% to put in the main interface, and the extension of the files to be
+% written
+
+% MATHDESC NRU COR format (*.cor)
+</PRE>
+Modules delivered with the PVEOut registration package to read/save
+math data are 
+
+<UL>
+<LI>ReadCor.m/SaveCor.m (NRU .cor file format)
+</LI>
+<LI>ReadAir.m/SaveAir.m (Air 5.0 .air file format)
+</LI>
+</UL>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Claus Svarer
+2006-01-11
+</ADDRESS>
+</BODY>
+</HTML>

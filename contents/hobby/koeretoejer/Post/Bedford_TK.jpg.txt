@@ -1,0 +1,6 @@
+<h2>Bedford TK</h2>
+<ul>
+<li>Grundmodel: Bedford TK fra Epokemodeler/ADP.
+<li>&AElig;ndringer: Forbedret med vinduesviskere, Bedford m&aelig;rke (printet), sort maling i k&oslash;lergitter.
+<li>Noter:
+</ul>

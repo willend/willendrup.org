@@ -1,0 +1,6 @@
+<h2>Ford Cargo dyreambulance (kv&aelig;g etc.)</h2>
+<ul>
+<li>Grundmodel: Ford Cargo dyreambulance fra Rietze modelle.
+<li>Ingen forbedringer til dato men overvejer at montere blink
+<li>Forbillede <a target=_blank href="http://www.gtp.de/fotos/falck.html">Falck Roskilde (lignende biler p&aring; gtp.de)</a>
+</ul>

@@ -1,0 +1,6 @@
+<h2>Chevrolet ambulance</h2>
+<ul>
+<li>Grundmodel: Chevrolet van som ambulance, fra Trident.
+<li>&AElig;ndringer: Overvejer andre blink. 
+<li>Noter: Har ikke fundet billede af forbilledet - m&aring;ske burde man have brugt en <a target=_blank href="http://www.flickr.com/photos/perryolf/3269336629/"Dodge Tradesman</a> istedet? - S&aring;dan een havde Aalborg i hvert fald...
+</ul>

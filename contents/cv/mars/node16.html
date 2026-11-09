@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Parameter Estimation</TITLE>
+<META NAME="description" CONTENT="Parameter Estimation">
+<META NAME="keywords" CONTENT="mars">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="mars.css">
+
+<LINK REL="next" HREF="node17.html">
+<LINK REL="previous" HREF="node15.html">
+<LINK REL="up" HREF="node12.html">
+<LINK REL="next" HREF="node17.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html333"
+  HREF="node17.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html331"
+  HREF="node12.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html325"
+  HREF="node15.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html334"
+  HREF="node17.html">Inspection</A>
+<B> Up:</B> <A NAME="tex2html332"
+  HREF="node12.html">IPS - Interactive Point</A>
+<B> Previous:</B> <A NAME="tex2html326"
+  HREF="node15.html">Point Selection</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H4><A NAME="SECTION00032440000000000000">
+Parameter Estimation</A>
+</H4>
+When enough points have been selected, we can estimate the transfer
+function between the two images. This is done by pressing the
+'Est. Error' button of the point list interface (Figure <A HREF="#ips_point_many_est.ps">17</A>).
+
+<DIV ALIGN="CENTER"><A NAME="ips_point_many_est.ps"></A><A NAME="324"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 17:</STRONG>
+Transformation parameters estimated</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<A NAME="tex2html66"
+  HREF="../images/ips_point_many_est.png"><IMG
+ WIDTH="250" HEIGHT="46" ALIGN="BOTTOM" BORDER="0"
+ SRC="img22.png"
+ ALT="\includegraphics[width=0.45\textwidth]{images/ips_point_many_est.ps}"></A>
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+Since a transfer function has now been estimated, we can estimate the
+error on each landmark, by measuring the distance between the
+corresponding landmark of the standard image and the transformed
+coordinates of the reslice image (values in the right most column on
+Figure <A HREF="#ips_point_many_est.ps">17</A>).
+If an 'edit' button of the point list interface is pressed, the
+seleced landmark is shown on the 3-pane windows, along with a
+projection of the same landmark transformed in from the other image
+(Figure <A HREF="#ips_slice3_err_project.ps">18</A>).
+
+<DIV ALIGN="CENTER"><A NAME="ips_slice3_err_project.ps"></A><A NAME="336"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 18:</STRONG>
+Projection of 'minimal-error' point onto 3-pane views. Also
+  available in zoom mode.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<A NAME="tex2html68"
+  HREF="../images/ips_slice3_err_project.png"><IMG
+ WIDTH="250" HEIGHT="216" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="\includegraphics[width=0.45\textwidth]{images/ips_slice3_err_project.ps}"></A>
+<A NAME="tex2html69"
+  HREF="../images/ips_slice3_zoom_err_project.png"><IMG
+ WIDTH="250" HEIGHT="202" ALIGN="BOTTOM" BORDER="0"
+ SRC="img24.png"
+ ALT="\includegraphics[width=0.45\textwidth]{images/ips_slice3_zoom_err_project.ps}"></A>
+
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+If one or more of the errors reported on the <A NAME="tex2html70"
+  HREF="../images/ips_point_many_est.png">point
+  list</A>
+are large, this feature can
+be utilsed to readjust the point definitions. <B>Note:</B> You should never
+adjust a point which on the images seem well defined. Adjusting all
+points until zero error is achieved will only minimise the error of
+the points with respect to the estimated transfer function, the errors
+are not directly to the registration error between the two images, and
+are only useful for outlier detection.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html333"
+  HREF="node17.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html331"
+  HREF="node12.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html325"
+  HREF="node15.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html334"
+  HREF="node17.html">Inspection</A>
+<B> Up:</B> <A NAME="tex2html332"
+  HREF="node12.html">IPS - Interactive Point</A>
+<B> Previous:</B> <A NAME="tex2html326"
+  HREF="node15.html">Point Selection</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Claus Svarer
+2006-01-11
+</ADDRESS>
+</BODY>
+</HTML>

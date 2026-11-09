@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Interface Specification</TITLE>
+<META NAME="description" CONTENT="Interface Specification">
+<META NAME="keywords" CONTENT="mars">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="mars.css">
+
+<LINK REL="next" HREF="node10.html">
+<LINK REL="previous" HREF="node8.html">
+<LINK REL="up" HREF="node8.html">
+<LINK REL="next" HREF="node10.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html257"
+  HREF="node10.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html255"
+  HREF="node8.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html249"
+  HREF="node8.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html258"
+  HREF="node10.html">Air 5.0</A>
+<B> Up:</B> <A NAME="tex2html256"
+  HREF="node8.html">Registration modules</A>
+<B> Previous:</B> <A NAME="tex2html250"
+  HREF="node8.html">Registration modules</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00032100000000000000">
+Interface Specification</A>
+</H3>
+The program interface of a registration subtask module is a Matlab
+function with the following structure.
+<PRE>
+function Return=RegistrationModule(files,parent,ReturnFcn,Visualizer)
+% 
+% This is a generic template for a registration module for the PVEOut
+% registration package.
+%
+
+%
+% The string below defines that this is a registration module. The
+% latter part defines the string that will appear on the MARS interface
+%
+% PLUGINDESC Generic registration module
+%
+  
+% 
+% The input parameters are:
+%
+% files      - Struct with fields STD, RES and A:
+%              STD is a string containing the standard filename
+% 
+%              RES is a cell array of strings containing the reslice
+%              filenames
+% 
+%              A is a cell array of transformation matrices from the main
+%              interface, defining transformations between the RES files
+%              and the STD file.
+%
+%
+% parent     - Matlab figure handle of the main interface calling us.
+%
+%
+% 
+% ReturnFcn  - String containing the matlab function to execute on
+%              module exit.
+%
+%
+% Visualizer - The function to call for visualisation 'during
+%              registration'.
+%
+%
+
+% 
+% This is where code should be written to 
+% 
+% 1) Select which RES dataset(s) should be registerd with the STD
+% dataset, if more RES datasets are defined. (Some modules handles all
+% RES datasets at once, others not). 
+%
+% 2) Calculate registration parameters, e.g.:
+%
+
+A=cell(length(files.RES),1);
+
+%
+% A should always have the same length as the input files.RES cell
+% array, and contain homogenous transformation matrices to MARS
+% a reslice coordinate set to a standard set:
+%
+% x_std=A{j}*x_res,
+% 
+% where x_* are 4-dimensional homogenous coordinate vectors. Only
+% entries in A selected in 1) should contain data.
+%
+
+%
+% 3) Evaluate the following code to return data to the main program:
+% (This code can ofcourse be evaluated elsewhere, e.g. from a gui program.
+
+feval(ReturnFcn,'ReturningData',parent,A);
+
+% End of the registration module.
+</PRE>
+<BR><HR>
+<ADDRESS>
+Claus Svarer
+2006-01-11
+</ADDRESS>
+</BODY>
+</HTML>

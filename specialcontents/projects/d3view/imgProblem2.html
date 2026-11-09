@@ -1,0 +1,56 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.5 [en] (X11; I; HP-UX B.10.20 9000/782) [Netscape]">
+   <title>nru_view Users' Manual</title>
+</head>
+<body>
+
+<blockquote>
+<center>
+<h1>
+d3view Users tutorial (4): Understanding the imaging problem - activation
+</h1></center>
+</blockquote>
+
+In this part of the tutorial we explain how functional activation data can be 
+presented on the anatomical 3d object defined in the <A HREF="imgProblem1.html">previous 
+part</A> of the tutorial.<BR>
+<BR>
+Let us imagine that an activation dataset coregistered with the anatomical dataset has 
+been loaded. In <tt>d3view</tt>, activation data can be added in three different but combinable ways.
+<H2>Surface activation</H2>
+Activation on the surface of the brain is controlled using the "PET penetration depth" dialog,
+which appears by pressing the "Depth profile" button on the <tt>d3view</tt> control window.<BR><BR>
+<IMG SRC="pics/depwin.jpg" ALT="Surface activation profile" WIDTH="712" HEIGHT="283"> 
+<BR>
+<BR>
+Each point on the brain surface is coloured using a weighted average of the underlying 
+activation data. Any mathematical expression (in <tt>matlab</tt> syntax) can be used to 
+sample the underlying activation data across any number of points to any depth below the
+brain surface.<BR><BR>
+Here is an example of the resulting surface activation:
+<BR><BR>
+<IMG SRC="pics/surfact.jpg" ALT="Surface activation added" WIDTH="512" HEIGHT="586"> 
+<BR>
+<BR>
+<H2>Slice activation</H2>
+If a part of the brain surface is selected invisible, the anatomical data are presented on the 
+three intersecting planes. Activation data can be presented on the resulting slices:
+<BR><BR>
+<IMG SRC="pics/sliceact.jpg" ALT="Slice activation added in octant 2." WIDTH="512" HEIGHT="586"><BR>
+<BR>
+<H2>Blob activation</H2>
+Activated areas of the brain can be visualized by selecting a certain activation threshold. Activation
+above the selected threshold is encapsulated in so called activation blobs. An example of an activation
+blob is presented here:
+<BR><BR>
+<IMG SRC="pics/blobact.jpg" ALT="Blob activation added. Octant 2 is selected invisible." WIDTH="512" HEIGHT="586"><BR>
+<BR>
+Parts of the brain surface must be selected invisible in order to reveal blob activation - in this case octant number 2
+was selected invisible.<BR><BR>
+<A HREF="parameterControl.html">Next</A> tutorial item: <A HREF="parameterControl.html">Rendering 
+Parameters</A>. 
+</body>
+</html>

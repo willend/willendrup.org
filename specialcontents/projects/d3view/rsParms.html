@@ -1,0 +1,98 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.5 [en] (X11; I; HP-UX B.10.20 9000/782) [Netscape]">
+   <title>nru_view Users' Manual</title>
+</head>
+<body>
+
+<blockquote>
+<center>
+<h1>
+d3view Users tutorial (8): Reading and saving parameters
+</h1></center>
+</blockquote>
+<H2>Saving parameters</H2>
+Since adjustment of parameters in <tt>d3view</tt> can be quite complicated, it is possible to save the
+parameters used in one rendering for use at a leter time. By pressing the "Save parameters" button of the
+<tt>d3view</tt> command window, a standard <tt>matlab</tt> file dialog pops up, and a simple ascii text file 
+containing may parameters is saved to a chosen filename. Here is an 
+example of a <tt>d3view</tt> parameter file:
+<BR>
+<pre>
+********************************************************************************* 
+  
+ d3view Parameter file  
+  
+ Saved by willend@fog.pet.rh.dk
+ on 04-Jul-2000, 16:42:40 
+  
+********************************************************************************* 
+  
+ MR Template              : /data1/demos/d3view_template.mat 
+   including analyze data : /usr/local/Perl-Pam/MR-template/colin224flipx_half_talairach 
+   Min and Max set to     : (-49 , 315) 
+   MR Colormap            : gray 
+   MR Surface Visibility  : on 
+   MR Slice Visibility    : on 
+   Octant Origin          : [-30 10 5] 
+   Visible Octants        : 1,2,3,4,5,6,7,8 
+   Invisible Octants      :  
+  
+  
+ 1 PET datasets loaded  
+  
+ PET Dataset 1            : /data1/demos/kristin_hbm.img 
+   Min and Max set to     : (0.1 , 4.2935) 
+   PET Colormap           : hot 
+   PET Slice Visibility   : off 
+   PET Surface Visibilit  : on 
+   PET Blob Visibility    : off 
+  
+  
+ Extra Options window (Lights not listed)  
+  
+ Surface Material           
+   Ambient Light          : 0.3 
+   Diffuse Light          : 0.8 
+   Specular Light         : 0.3 
+   Lighting Method        : Gouraud 
+  
+ AC/PC Planes and Axes      
+   Plane Visibility       : on 
+   Edge Color             : [0 0 0] 
+   Face Color             : [0.040962 0.3108 1] 
+   Axis Visibility        : on 
+   Axis Color             : [1 1 1] 
+   X Label                : x 
+   Y Label                : y 
+   Z Label                : z 
+   Label Color            : [0 0.67718 1] 
+   Title                  :  
+   Title Color            : [1 1 1] 
+  
+ Misc Properties     
+   Surface Resolution     :  44225 
+   PET/MR color blending  : on 
+   MR Surface Color       : [0.5 0.5 0.5] 
+   Background Color       : [0 0 0] 
+   Use Bgcolor for prints : off 
+  
+ End of Parameter List  
+
+</pre>
+<BR>
+
+<H2>Reading parameters</H2>
+For user convenience, it is possible to read a saved parameter file from inside <tt>d3view</tt>. 
+Pressing the "Read parameters" button of the <tt>d3view</tt> command window will bring up a standard <tt>matlab</tt> file dialog,
+for selection of an ascii text file, which is then shown in the editor <tt>nedit</tt>:<BR><BR>
+<IMG SRC="pics/nedit.jpg" ALT="Nedit showing a parameter file" WIDTH="755" HEIGHT="444"><BR>
+<BR>
+The user is then able to copy-paste parameters from the parameter file into <tt>d3view</tt>.
+<BR><BR>
+End of tutorial. <A HREF="d3view_manual.html">Back</A> to <tt>d3view</tt> info 
+page. 
+</body>
+</html>
